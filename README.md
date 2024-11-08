@@ -11,9 +11,9 @@ My vscode extension grocery
 ```typescript
 // arguments
 {
-	pattern: string,
-	replacement: string,
-	regex: boolean | undefined
+    pattern: string,
+    replacement: string,
+    regex: boolean | undefined
 }
 ```
 
