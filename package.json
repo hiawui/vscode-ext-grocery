@@ -15,7 +15,17 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
-  "contributes": {},
+  "contributes": {
+    "configuration": {
+      "title": "Hiawui Grocery",
+      "properties": {
+        "hiawui.grocery.macros": {
+          "type": "object",
+          "default": {}
+        }
+      }
+    }
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
