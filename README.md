@@ -17,6 +17,29 @@ My vscode extension grocery
 }
 ```
 
-## Extension Settings
+### Macros Configuration
 
-None
+Below settings add two commands:
+
+1. **_hiawui.grocery.macros.simple_**: Move cursor to line end and insert a line break
+2. **_hiawui.grocery.macros.complex_**: Format the document and replace all tabs to spaces
+
+```json
+// settings.json
+{
+  "hiawui.grocery.macros": {
+    "simple": ["cursorEnd", "lineBreakInsert"],
+    "complex": [
+      "editor.action.formatDocument",
+      {
+        "command": "hiawui.grocery.replace",
+        "args": {
+          "pattern": "\t",
+          "replacement": "....",
+          "regex": true
+        }
+      }
+    ]
+  }
+}
+```
