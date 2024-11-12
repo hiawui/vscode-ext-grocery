@@ -21,8 +21,8 @@ My vscode extension grocery
 
 Below settings add two commands:
 
-1. **_hiawui.grocery.macros.simple_**: Move cursor to line end and insert a line break
-2. **_hiawui.grocery.macros.complex_**: Format the document and replace all tabs to spaces
+1. **hiawui.grocery.macros.simple**: Move cursor to line end and insert a line break
+2. **hiawui.grocery.macros.complex**: Format the document and replace all tabs to spaces
 
 ```json
 // settings.json
