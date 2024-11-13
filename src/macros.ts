@@ -71,9 +71,9 @@ function reloadMacros() {
       })
     )
   })
-  vscode.window.showInformationMessage(
-    `macros reloaded. ${JSON.stringify(macrosList())}`
-  )
+  //   vscode.window.showInformationMessage(
+  //     `macros reloaded. ${JSON.stringify(macrosList())}`
+  //   )
 }
 
 // This method is called when your extension is activated
